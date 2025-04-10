@@ -418,6 +418,7 @@
 					"location": {
 						"type": "AzureBlobStorageLocation",
 						"fileName": "ecdc_file_list.json",
+						"folderPath": "ecdc",
 						"container": "configs"
 					}
 				},
