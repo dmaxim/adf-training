@@ -16,6 +16,9 @@
 		},
 		"population_data_uploaded_properties_typeProperties_scope": {
 			"value": "/subscriptions/bb0c99b7-d44d-413a-b294-564466712637/resourceGroups/rg-mxinfo-data-eng-poc-eus/providers/Microsoft.Storage/storageAccounts/mxinfodataengpoceus"
+		},
+		"ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
+			"value": "https://github.com"
 		}
 	}
 }
