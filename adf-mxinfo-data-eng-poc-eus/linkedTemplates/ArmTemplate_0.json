@@ -499,7 +499,14 @@
 						"interval": 1,
 						"startTime": "2025-04-10T18:03:00",
 						"timeZone": "Eastern Standard Time",
-						"schedule": {}
+						"schedule": {
+							"minutes": [
+								10
+							],
+							"hours": [
+								18
+							]
+						}
 					}
 				}
 			},
