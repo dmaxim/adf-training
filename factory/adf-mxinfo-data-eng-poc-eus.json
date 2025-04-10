@@ -1,0 +1,9 @@
+{
+	"name": "adf-mxinfo-data-eng-poc-eus",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d189f2f5-f9f6-4a5e-9f81-4273b2e4bbd4",
+		"tenantId": "38ec304a-0fad-408b-b7cd-e04a2e25b885"
+	}
+}
