@@ -497,8 +497,9 @@
 					"recurrence": {
 						"frequency": "Day",
 						"interval": 1,
-						"startTime": "2025-04-10T17:59:00",
-						"timeZone": "Eastern Standard Time"
+						"startTime": "2025-04-10T18:03:00",
+						"timeZone": "Eastern Standard Time",
+						"schedule": {}
 					}
 				}
 			},
