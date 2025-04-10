@@ -21,7 +21,7 @@
 		},
 		"ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://github.com"
+			"defaultValue": "@{linkedService().serviceBaseUrl}"
 		},
 		"population_data_uploaded_properties_typeProperties_scope": {
 			"type": "string",
@@ -98,6 +98,10 @@
 									"relativeURL": {
 										"value": "@pipeline().parameters.sourceRelativeURL",
 										"type": "Expression"
+									},
+									"serviceBaseURL": {
+										"value": "@pipeline().parameters.serviceBaseUrl",
+										"type": "Expression"
 									}
 								}
 							}
@@ -125,6 +129,9 @@
 						"type": "string"
 					},
 					"sinkFileName": {
+						"type": "string"
+					},
+					"serviceBaseUrl": {
 						"type": "string"
 					}
 				},
@@ -437,10 +444,19 @@
 			"properties": {
 				"linkedServiceName": {
 					"referenceName": "ls_http_opendata_ecdc_europa_eu",
-					"type": "LinkedServiceReference"
+					"type": "LinkedServiceReference",
+					"parameters": {
+						"serviceBaseUrl": {
+							"value": "@dataset().serviceBaseURL",
+							"type": "Expression"
+						}
+					}
 				},
 				"parameters": {
 					"relativeURL": {
+						"type": "string"
+					},
+					"serviceBaseURL": {
 						"type": "string"
 					}
 				},
@@ -559,6 +575,11 @@
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
 			"properties": {
+				"parameters": {
+					"serviceBaseUrl": {
+						"type": "string"
+					}
+				},
 				"annotations": [],
 				"type": "HttpServer",
 				"typeProperties": {
