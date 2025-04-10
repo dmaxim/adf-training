@@ -14,6 +14,9 @@
 		"ls_ablob_covidreportingdl_properties_typeProperties_url": {
 			"value": "https://mxinfodataengpoceusdl.dfs.core.windows.net/"
 		},
+		"population_data_uploaded_properties_typeProperties_scope": {
+			"value": "/subscriptions/bb0c99b7-d44d-413a-b294-564466712637/resourceGroups/rg-mxinfo-data-eng-poc-eus/providers/Microsoft.Storage/storageAccounts/mxinfodataengpoceus"
+		},
 		"containerUri": {
 			"value": ""
 		},

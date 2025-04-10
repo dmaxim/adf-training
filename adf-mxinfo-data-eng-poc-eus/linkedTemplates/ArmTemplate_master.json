@@ -19,6 +19,10 @@
 			"type": "string",
 			"defaultValue": "https://mxinfodataengpoceusdl.dfs.core.windows.net/"
 		},
+		"population_data_uploaded_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/bb0c99b7-d44d-413a-b294-564466712637/resourceGroups/rg-mxinfo-data-eng-poc-eus/providers/Microsoft.Storage/storageAccounts/mxinfodataengpoceus"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -54,6 +58,9 @@
 					},
 					"ls_ablob_covidreportingdl_properties_typeProperties_url": {
 						"value": "[parameters('ls_ablob_covidreportingdl_properties_typeProperties_url')]"
+					},
+					"population_data_uploaded_properties_typeProperties_scope": {
+						"value": "[parameters('population_data_uploaded_properties_typeProperties_scope')]"
 					}
 				}
 			},
