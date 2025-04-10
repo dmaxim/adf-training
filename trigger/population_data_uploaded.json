@@ -1,0 +1,17 @@
+{
+	"name": "population_data_uploaded",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/population/blobs/population_by_age.tsv.gz",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/bb0c99b7-d44d-413a-b294-564466712637/resourceGroups/rg-mxinfo-data-eng-poc-eus/providers/Microsoft.Storage/storageAccounts/mxinfodataengpoceus",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
