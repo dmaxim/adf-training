@@ -25,6 +25,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -114,6 +115,8 @@
 			}
 		],
 		"concurrency": 1,
-		"annotations": []
-	}
+		"annotations": [],
+		"lastPublishTime": "2025-04-10T19:50:03Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
 }
