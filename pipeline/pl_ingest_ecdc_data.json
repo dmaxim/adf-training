@@ -129,8 +129,11 @@
 			}
 		],
 		"concurrency": 1,
+		"folder": {
+			"name": "Ingest"
+		},
 		"annotations": [],
-		"lastPublishTime": "2025-04-10T19:50:03Z"
+		"lastPublishTime": "2025-04-17T16:02:03Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }

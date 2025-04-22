@@ -19,6 +19,9 @@
 				"type": "string"
 			}
 		},
+		"folder": {
+			"name": "Lookup"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

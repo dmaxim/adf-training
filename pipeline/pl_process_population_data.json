@@ -1,10 +1,10 @@
 {
-	"name": "pl_process_hospital_admissions",
+	"name": "pl_process_population_data",
 	"properties": {
 		"activities": [
 			{
-				"name": "df_hospital_admissions",
-				"type": "ExecuteDataFlow",
+				"name": "ExecutePopulationTransformation",
+				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -15,15 +15,11 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"dataflow": {
-						"referenceName": "df_hospital_admissions",
-						"type": "DataFlowReference"
-					},
-					"compute": {
-						"coreCount": 8,
-						"computeType": "General"
-					},
-					"traceLevel": "Fine"
+					"notebookPath": "/Users/dmaxim@mxinformatics.com/COVID/transform/transform_population_data"
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_databricks_covid_cluster",
+					"type": "LinkedServiceReference"
 				}
 			}
 		],

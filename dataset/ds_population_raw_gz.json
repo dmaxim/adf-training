@@ -5,6 +5,9 @@
 			"referenceName": "ls_ablob_covidreportingeus",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "SQL"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
